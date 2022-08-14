@@ -10,13 +10,13 @@
     <img alt="Imagem do projeto" src="img/home.svg" width="1000px">
 </p>
 
-<h3 align="center"><a href="#" style="color:#8e2424">Clique para visitar o projeto</a></h3>
+<h3 align="center"><a href="https://diovanealves.github.io/OptimusTech/" style="color:#8e2424">Clique para visitar o projeto</a></h3>
 
 <h2 align="center">Melhorias</h2>
 
--  [ ] Responsividade em dispositivos Mobile.
--  [ ] Animação ao rolar a página.
--  [ ] Personalização da Scroll Bar.
+-  [x] Responsividade em dispositivos Mobile.
+-  [x] Animação ao rolar a página.
+-  [x] Personalização da Scroll Bar.
 
 <h2 align="center" style="font-size:30px">Tecnologias Utilizadas.</h2>
 <h3>Para o desenvolvimento desse site foram utilizados as seguintes tecnologias. </h3>

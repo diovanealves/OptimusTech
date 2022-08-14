@@ -4,41 +4,45 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+
       <link rel="stylesheet" href="src/style.css" />
       <title>Document</title>
    </head>
-   <body id="home">
-      <nav class="navbar">
-         <img src="img/logo.svg" />
-
-         <div class="navigator">
-            <a href="#home">Home</a>
-            <a href="#metric">Produtos</a>
-            <a href="#talents">Recursos</a>
-            <a href="#header">Sobre nós</a>
+   <body>
+      <div class="navbar">
+         <img src="img/logo.svg" alt="Logo da OptimusTech" />
+         <div class="menu">
+            <a href="#navbar">Home</a>
+            <a href="#metrica">Produtos</a>
+            <a href="#talentos">Recursos</a>
+            <a href="#home">Sobre nós</a>
          </div>
 
          <div class="button">
             <button class="signIn">Entrar</button>
             <button class="signUp">Cadastrar</button>
          </div>
-      </nav>
+      </div>
 
-      <section id="header" class="header">
-         <h2 class="about">Sobre nós</h2>
-         <h1 class="titleHeader">Por que somos diferentes?</h1>
-         <p class="textHeader">
+      <section id="home" class="home">
+         <h2 class="sobre">Sobre nós</h2>
+         <h1 class="tituloHome">Por que somos diferentes?</h1>
+         <p class="textoHome">
             Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as
             empresas de <br />todo o mundo a se concentrarem naquilo que é
             realmente importante para elas.
          </p>
       </section>
 
-      <section id="metric" class="metric">
+      <section id="metrica" class="metrica">
          <div>
             <h1 class="highlight">400+</h1>
-            <span class="titleMetric">Projetos concluídos</span>
-            <p class="textMetric">
+            <span class="tituloMetrica">Projetos concluídos</span>
+            <p class="textoMetrica">
                Nós ajudamos a construir mais de <br />
                400 projetos incríveis.
             </p>
@@ -46,8 +50,8 @@
 
          <div>
             <h1 class="highlight">100+</h1>
-            <span class="titleMetric">Colaboradores</span>
-            <p class="textMetric">
+            <span class="tituloMetrica">Colaboradores</span>
+            <p class="textoMetrica">
                Temos mais de 100 colaboradores <br />
                no nosso time que se preocupam <br />
                com nossos clientes.
@@ -56,8 +60,8 @@
 
          <div>
             <h1 class="highlight">20K</h1>
-            <span class="titleMetric">Downloads</span>
-            <p class="textMetric">
+            <span class="tituloMetrica">Downloads</span>
+            <p class="textoMetrica">
                Nossos projetos que estão <br />
                disponíveis em lojas já foram <br />
                baixados mais de 20.000 vezes.
@@ -66,8 +70,8 @@
 
          <div>
             <h1 class="highlight">500+</h1>
-            <span class="titleMetric">Reviews 5 estrelas</span>
-            <p class="textMetric">
+            <span class="tituloMetrica">Reviews 5 estrelas</span>
+            <p class="textoMetrica">
                Estamos orgulhosos de contar com <br />
                mais de 500 reviews 5 estrelas em <br />
                nossos produtos.
@@ -75,40 +79,40 @@
          </div>
       </section>
 
-      <section id="talents" class="talents">
-         <span class="talentJobs">Vagas abertas!</span>
-         <h1 class="titleJobs">Estamos procurando por talentos</h1>
+      <section id="talentos" class="talentos">
+         <span class="talentoVaga">Vagas abertas!</span>
+         <h1 class="tituloTalentos">Estamos procurando por talentos</h1>
          <p>Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
-         <img src="img/talents.svg" alt="" class="talentImage" />
+         <img src="/img/talentos.svg" alt="" class="talentoImagem" />
 
-         <div>
+         <div class="vagas">
             <h1 class="vaga">Design</h1>
-            <p class="titleVaga">Product Designer</p>
+            <p class="tituloVaga">Product Designer</p>
             <div class="info">
                <p>Full-time</p>
                <p>Faixa salarial: R$8.000</p>
             </div>
 
-            <p class="titleVaga">Ux Designer</p>
+            <p class="tituloVaga">Ux Designer</p>
             <div class="info">
                <span>Full-time</span>
                <span>Faixa salarial: R$6.000</span>
             </div>
 
             <h1 class="vaga">Desenvolvimento de Software</h1>
-            <p class="titleVaga">Desenvolvedor(a) iOS</p>
+            <p class="tituloVaga">Desenvolvedor(a) iOS</p>
             <div class="info">
                <p>Full-time</p>
                <p>Faixa salarial: R$8.000</p>
             </div>
 
-            <p class="titleVaga">Desenvolvedor(a) Front-end</p>
+            <p class="tituloVaga">Desenvolvedor(a) Front-end</p>
             <div class="info">
                <p>Full-time</p>
                <p>Faixa salarial: R$7.000</p>
             </div>
 
-            <p class="titleVaga">Desenvolvedor(a) Back-end</p>
+            <p class="tituloVaga">Desenvolvedor(a) Back-end</p>
             <div class="info">
                <p>Full-time</p>
                <p>Faixa salarial: R$8.000</p>
@@ -116,32 +120,35 @@
          </div>
       </section>
 
-      <section class="contributor">
-         <p class="textContributor">
+      <section class="colaboradores">
+         <p class="textoColaboradores">
             Veja o que nossos colaboradores falam sobre nós
          </p>
-         <h1 class="titleContributor">
+         <h1 class="tituloColaboradores">
             OptimusTech se importa com a saúde dos seus colaboradores e <br />
             sempre procura nos dar todo tipo de auxílio possível.
          </h1>
          <img
             src="https://github.com/diovanealves.png"
             alt="Logo de um colaborador"
-            class="logoContributor"
+            class="logoColaborador"
          />
-         <h1 class="nameContributor">Diovane Alves</h1>
+         <h1 class="nomeColaborador">Diovane Alves</h1>
          <p>Desenvolvedor Full Stack</p>
       </section>
 
-      <section id="contact" class="contact">
-         <h1 class="titleContact">Acompanhe as nossas oportunidades</h1>
+      <section id="contato" class="contato">
+         <h1 class="tituloContato">Acompanhe as nossas oportunidades</h1>
          <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
 
          <div class="input">
-            <input class="inputContact" placeholder="Seu e-mail" />
-            <button class="buttonContact">Cadastrar</button>
+            <input class="inputContato" placeholder="Seu e-mail" />
+            <button class="botaoContato">Cadastrar</button>
          </div>
          <p>© 2022 OptimusTech. Todos os direitos reservados.</p>
       </section>
+
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="src/script.js"></script>
    </body>
 </html>

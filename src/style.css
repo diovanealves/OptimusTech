@@ -7,7 +7,7 @@
 }
 
 * {
-   margin: 0;
+   margin: 0 1px;
    padding: 0;
    box-sizing: border-box;
    text-decoration: none;
@@ -20,17 +20,17 @@ html {
 }
 
 .navbar {
-   width: 96%;
+   width: 100%;
    display: flex;
-   align-items: center;
-   flex-direction: row;
    justify-content: space-around;
-   margin: 28px 28px;
+   align-items: center;
+   margin-top: 30px;
 }
 
-.navigator {
+.menu {
    display: flex;
-   gap: 32px;
+   align-items: center;
+   gap: 20px;
 }
 
 .signIn {
@@ -47,34 +47,39 @@ html {
    color: #ffff;
 }
 
-.header {
+.buttonMobile {
+   display: none;
+   background-color: var(--main-color);
+}
+
+.home {
    display: flex;
    flex-direction: column;
    align-items: center;
    text-align: center;
-   margin-top: 96px;
+   margin-top: 220px;
 }
 
-.about {
+.sobre {
    color: var(--main-color);
    font-weight: 600;
    margin-bottom: 24px;
 }
 
-.titleHeader {
+.tituloHome {
    font-weight: 600;
    font-size: 2.7rem;
    color: var(--text-highlight);
    margin-bottom: 36px;
 }
 
-.textHeader {
+.textoHome {
    font-weight: 400;
    line-height: 26px;
    margin-bottom: 107px;
 }
 
-.metric {
+.metrica {
    display: flex;
    justify-content: center;
    gap: 32px;
@@ -87,43 +92,44 @@ html {
    font-weight: 600;
 }
 
-.titleMetric {
+.tituloMetrica {
    color: var(--text-highlight);
    font-weight: 500;
    font-size: 1.2rem;
 }
 
-.textMetric {
+.textoMetrica {
    font-weight: 400;
    margin-top: 8px;
    font-size: 1rem;
-   margin-bottom: 120px;
+   margin-bottom: 10px;
 }
 
-.talents {
+.talentos {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 
-.talentJobs {
+.talentoVaga {
    color: var(--main-color);
    font-weight: 500;
    font-size: 1.3rem;
    padding: 4px 12px;
    background-color: rgba(142, 36, 36, 0.05);
    border-radius: 20px;
+   margin-top: 150px;
    margin-bottom: 16px;
 }
 
-.titleJobs {
+.tituloTalentos {
    color: var(--text-highlight);
    font-weight: 600;
    font-size: 2rem;
    margin-bottom: 20px;
 }
 
-.talentImage {
+.talentoImagem {
    margin-top: 64px;
    border-radius: 20px;
 }
@@ -135,7 +141,7 @@ html {
    color: var(--text-highlight);
 }
 
-.titleVaga {
+.tituloVaga {
    margin-top: 56px;
    margin-left: 24px;
    margin-bottom: 32px;
@@ -151,7 +157,7 @@ html {
    margin-bottom: 76px;
 }
 
-.contributor {
+.colaboradores {
    margin-top: 64px;
    display: flex;
    flex-direction: column;
@@ -159,34 +165,34 @@ html {
    text-align: center;
 }
 
-.textContributor {
+.textoColaboradores {
    color: var(--main-color);
    font-weight: 600;
    margin-bottom: 16px;
 }
 
-.titleContributor {
+.tituloColaboradores {
    color: var(--text-highlight);
    font-weight: 500;
    font-size: 2rem;
    margin-bottom: 32px;
 }
 
-.logoContributor {
+.logoColaborador {
    width: 77px;
    height: 77px;
    border-radius: 100%;
    border: 2px solid var(--main-color);
 }
 
-.nameContributor {
+.nomeColaborador {
    margin-top: 16px;
    margin-bottom: 4px;
    color: var(--text-highlight);
    font-weight: 500;
 }
 
-.contact {
+.contato {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -194,7 +200,7 @@ html {
    margin: 96px 0;
 }
 
-.titleContact {
+.tituloContato {
    color: var(--text-highlight);
    font-weight: 600;
    font-size: 2rem;
@@ -205,17 +211,59 @@ html {
    margin: 40px 0;
 }
 
-.inputContact {
+.inputContato {
    border: none;
    height: 40px;
    width: 200px;
+   text-align: center;
 }
 
-.buttonContact {
+.botaoContato {
    height: 40px;
    width: 100px;
    background-color: var(--main-color);
    border: 1px solid var(--main-color);
    border-radius: 8px;
    color: #ffff;
+}
+
+body::-webkit-scrollbar {
+   width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+   background-color: var(--main-color);
+   border-radius: 20px;
+}
+
+@media (max-width: 1300px) {
+   .talentoImagem {
+      width: 100%;
+   }
+
+   .metrica {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media (max-width: 800px) {
+   .navbar {
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   .menu {
+      flex-direction: column;
+      gap: 5px;
+      text-align: center;
+   }
+
+   .tituloTalentos {
+      text-align: center;
+   }
+
+   .tituloColaboradores {
+      font-size: 1.46rem;
+   }
 }
